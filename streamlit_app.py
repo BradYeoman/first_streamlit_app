@@ -19,7 +19,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # add a pick list here so users can pick the fruit
 # they want to include in their smoothie
-st.multiselect("Pick some fruits:", list(my_fruit_list.index))
+st.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 
 # display the table on the page
 st.dataframe(my_fruit_list)
